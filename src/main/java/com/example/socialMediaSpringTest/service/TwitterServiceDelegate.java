@@ -1,8 +1,14 @@
 package com.example.socialMediaSpringTest.service;
 
+import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Service qui s'occupe de la gestion de twitter
@@ -26,6 +32,22 @@ public class TwitterServiceDelegate {
         // attention pas de doublon
         twitter.updateStatus(message);
 
+    }
+
+    public List<String> tweetAccueil() throws TwitterException {
+
+        Twitter twitter = TwitterFactory.getSingleton();
+
+        List<String> lesTweets = new ArrayList<>();
+        List<Status> statuses = twitter.getHomeTimeline();
+
+        System.out.println("Showing home timeLine");
+        for (Status status : statuses) {
+//            System.out.println(status.getUser().getName() + ":" + status.getText());
+            lesTweets.add("Nom de l'user : " + status.getUser().getName() + " Tweet : " + status.getText() );
+        }
+
+        return lesTweets;
     }
 
 }
