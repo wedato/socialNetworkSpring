@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>socialMediaSpringTest</artifactId>
+    <artifactId>socialNetworkProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>socialMediaSpringTest</name>
-    <description>Demo project for Spring Boot</description>
+    <name>socialNetworkSpring</name>
+    <description>Social Newtork project</description>
     <properties>
         <java.version>16</java.version>
     </properties>

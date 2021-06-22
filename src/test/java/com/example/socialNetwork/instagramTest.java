@@ -1,18 +1,12 @@
-package com.example.socialMediaSpringTest;
+package com.example.socialNetwork;
 
 
 
-import com.restfb.types.instagram.IgMedia;
-import org.brunocvcunha.instagram4j.Instagram4j;
-import org.brunocvcunha.instagram4j.requests.InstagramSearchUsernameRequest;
 import org.brunocvcunha.instagram4j.requests.InstagramUploadPhotoRequest;
-import org.brunocvcunha.instagram4j.requests.payload.InstagramSearchUsernameResult;
 import twitter4j.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 public class instagramTest {
 
@@ -59,7 +53,7 @@ public class instagramTest {
 //            System.out.println(post.caption.getText());
 //        }
 
-//        instagram.sendRequest(new InstagramUploadPhotoRequest(new File("src/main/java/com/example/socialMediaSpringTest/test.jpg"), "test instagram api with java"));
+//        instagram.sendRequest(new InstagramUploadPhotoRequest(new File("test.jpg"), "test instagram api with java"));
 
 
 

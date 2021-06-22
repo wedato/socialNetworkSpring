@@ -1,20 +1,18 @@
-package com.example.socialMediaSpringTest;
+package com.example.socialNetwork;
 
 
-import javafx.application.Application;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-public class TwitterSpringTestApplication {
+public class SocialNetworkAPI {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(TwitterSpringTestApplication.class, args);
+        SpringApplication.run(SocialNetworkAPI.class, args);
 
     }
 
